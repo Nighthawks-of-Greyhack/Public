@@ -1,3 +1,4 @@
+//Hacks into the wifi networks
 crypto=null
 if typeof(crypto)!="cryptoLib" then crypto=include_lib(home_dir+"/lib/crypto.so")
 if typeof(crypto)!="cryptoLib" then crypto=include_lib("/lib/crypto.so")
