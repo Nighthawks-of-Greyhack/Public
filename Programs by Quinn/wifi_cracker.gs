@@ -1,4 +1,6 @@
 //Hacks into the wifi networks
+//NightHawks not liable for system damage from using this software
+//Questions or Bugs report on the discord: https://discord.gg/FVx8c8Fm9n
 crypto=null
 if typeof(crypto)!="cryptoLib" then crypto=include_lib(home_dir+"/lib/crypto.so")
 if typeof(crypto)!="cryptoLib" then crypto=include_lib("/lib/crypto.so")
