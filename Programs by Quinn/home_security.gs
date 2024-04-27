@@ -7,6 +7,8 @@ color = {};color.u="<u>";color.white = "<color=#FFFFFF>";color.grey = "<color=#A
 shell=get_shell("root","ROOT_PASSWORD_HERE") 
 computer=shell.host_computer
 lockdown=function(shell)
+    shell.host_computer.File("/").set_owner("root",1)
+    shell.host_computer.File("/").set_group("root",1)
     computer.File("/").chmod("o-rwx",1)
     computer.File("/").chmod("u-rwx",1)
     computer.File("/").chmod("g-rwx",1)
